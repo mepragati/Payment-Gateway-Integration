@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styleCheckout.css">
+</head>
+<body>
+
+<div class="center">
+<div class="row">
+  <div class="col-50">
+    <div class="container" >
+      <form  action="payscript.php" method="post" style="padding: 2.5em;">
+      
+        <div class="row" >
+          <div class="col-25">
+            <h3 style="text-align: center;margin:20px 10px;">Checkout Form</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="name" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <input type="hidden" value="<?php echo 'OID'.rand(100,1000);?>" name="orderid">
+            <label for="amount"><i class="fa fa-inr"></i> Amount</label>
+            <input type="text" id="amount" name="amount" placeholder="100">
+        </div>
+       
+        <input type="submit"  value="Pay Now" class="btn">
+      </form>
+    </div>
+  </div>
+ 
+</div>
+</div>
+
+</body>
+<footer>
+  <div id="bottom">Developed By : Pragati Kumari</div>
+</footer>
+</html>
